@@ -2,7 +2,7 @@
 
 namespace Fina.Common.Responses;
 
-public abstract class PagedResponse<TData> : Response<TData>
+public class PagedResponse<TData> : Response<TData>
 {
     public int CurrentSize { get; set; }
     public int TotalPages => (int)Math.Ceiling(TotalCount / (double)PageSize);

@@ -2,7 +2,7 @@
 
 namespace Fina.Common.Responses;
 
-public abstract class Response<TData>
+public class Response<TData>
 {
 	private int _code = Configuration.DefaultStatusCode;
 

@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Fina.Common.Requests.Transaction;
 
-public class UpdateTransactionRequest
+public class UpdateTransactionRequest : Request
 {
     public long Id { get; set; }
 
