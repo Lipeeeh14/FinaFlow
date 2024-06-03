@@ -10,7 +10,7 @@ public class Response<TData>
     public string? Message { get; set; }
 
     [JsonIgnore]
-	public bool IsSuccess => _code is > Configuration.DefaultStatusCode and <= 299;
+	public bool IsSuccess => _code is >= Configuration.DefaultStatusCode and <= 299;
 
 	[JsonConstructor] // Padrão para construção do objeto
 	public Response() => _code = Configuration.DefaultStatusCode;
